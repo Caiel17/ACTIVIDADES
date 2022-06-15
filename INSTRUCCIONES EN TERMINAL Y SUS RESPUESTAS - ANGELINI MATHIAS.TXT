@@ -1,0 +1,152 @@
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ mkdir "Deportes con Pelota"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ mkdir "Deportes acuaticos"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ mkdir "Deportes extremos"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ mkdir "Deportes de invierno"                                                                                                    
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ mkdir "Deportes de motor"                                                                                                       
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ cd "Deportes con Pelota"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes con Pelota (main)
+$ touch Futbol
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes con Pelota (main)
+$ cd ..
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ cd "Deportes de motor"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes de motor (main)
+$ touch Motocross
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes de motor (main)
+$ cd ..
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ cd "Deportes de invierno"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes de invierno (main)
+$ touch Trineo.jpg
+
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/Deportes de invierno (main)
+$ cd ..
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ ls -R
+.:
+'Deportes acuaticos'/  'Deportes con Pelota'/  'Deportes de invierno'/  'Deportes de motor'/  'Deportes extremos'/
+
+'./Deportes acuaticos':
+
+'./Deportes con Pelota':
+Futbol
+
+'./Deportes de invierno':
+Trineo.jpg
+
+'./Deportes de motor':
+Motocross
+
+'./Deportes extremos':
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ rm -r "Deportes extremos"
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ pwd
+/c/Users/Math-/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git init
+Initialized empty Git repository in C:/Users/Math-/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES/.git/
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git remote add origin https://github.com/Caiel17/ACTIVIDADES.git
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Deportes con Pelota/
+        Deportes de invierno/
+        Deportes de motor/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git add .
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Deportes con Pelota/Futbol
+        new file:   Deportes de invierno/Trineo.jpg
+        new file:   Deportes de motor/Motocross
+
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git commit -m "Se agregaron las carpetas que sobrevivieron a la eliminación, y que poseen contenido"
+[main (root-commit) 604b0ba] Se agregaron las carpetas que sobrevivieron a la eliminación, y que poseen contenido
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Deportes con Pelota/Futbol
+ create mode 100644 Deportes de invierno/Trineo.jpg
+ create mode 100644 Deportes de motor/Motocross
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git log
+commit 604b0baa388e131ac5554b865d35dae619c1adf0 (HEAD -> main)
+Author: Caiel17 <angelinimathias@gmail.com>
+Date:   Tue Jun 14 21:56:52 2022 -0300
+
+    Se agregaron las carpetas que sobrevivieron a la eliminación, y que poseen contenido
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git push origin main
+remote: Permission to Caiel17/ACTIVIDADES.git denied to sephir17.
+fatal: unable to access 'https://github.com/Caiel17/ACTIVIDADES.git/': The requested URL returned error: 403
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git remote set-url origin https://Caiel17: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@github.com/Caiel17/ACTIVIDADES
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git remote -v
+origin  https://Caiel17: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@github.com/Caiel17/ACTIVIDADES (fetch)
+origin  https://Caiel17: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@github.com/Caiel17/ACTIVIDADES (push)
+
+Math-@Caelum MINGW64 ~/Desktop/INTROD. A LA INFORMÁTICA/ACTIVIDADES (main)
+$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 480 bytes | 68.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Caiel17/ACTIVIDADES
+ * [new branch]      main -> main
+
+    Se agregaron las carpetas que sobrevivieron a la eliminación, y que poseen contenido
